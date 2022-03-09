@@ -8,7 +8,7 @@ resource "aws_instance" "s3_ec21" {
   instance_type = "t3.micro"
   
   tags = {
-    #Name = each.key
+    Name = each.key
   }
 }
 
