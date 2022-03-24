@@ -5,7 +5,7 @@ resource "aws_instance" "s3_ec21" {
     second_vm = "ami-04a223c5825a793bc"
   }
  
-  instance_type = "t2.micro"
+  instance_type = "t3.large"
   
   tags = {
     Name = each.key
