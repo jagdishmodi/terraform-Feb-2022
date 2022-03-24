@@ -1,4 +1,11 @@
-
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 4.0"
+    }
+  }
+}
 variable "env" {
 
     description = "The env for tags"
